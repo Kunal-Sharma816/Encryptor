@@ -1,79 +1,51 @@
 # Secure File Storage System
 
+## Team Members
+1. Keshav Kabra(22bcs058)
+2. Kunal Sharma(22bcs058)
+3. Anish Raja(22bcs012)
+4. Ketan Shamra(22bcs053)
+   
 ## Overview
-The Secure File Storage System is a web application built with a full-stack setup to ensure the secure storage of sensitive files. Files are encrypted on the client side using AES encryption, making sure that only authorized users with the decryption key can access stored files.
+The Secure File Storage System is a web application designed to securely store sensitive files. Built with a robust full-stack setup, the application ensures files are encrypted on the client side using AES encryption. This way, only authorized users with the correct decryption key can access stored files, maintaining the highest level of data confidentiality.
+
+## Target
+The **Secure File Storage System** targets users who need a safe platform for uploading, storing, and retrieving files with enhanced privacy. Key goals include:
+
+- **Ensuring Confidentiality**: Files are encrypted with AES on the client side, preventing unauthorized access to file contents.
+- **Enabling Secure File Sharing**: The platform allows users to share files securely with specific individuals, controlled by access keys.
+- **Protecting User Data**: Access to files is limited to verified users, protecting data integrity.
+- **Preventing Data Tampering and Breaches**: AES encryption, combined with user authentication, ensures files are protected from cyber threats, safeguarding user data even in the event of a database or network compromise.
 
 ## Features
-- **AES Encryption (Client-Side)**: Encrypts files before they reach the server, providing additional security.
-- **User Authentication**: Verifies user credentials to restrict access to the storage system.
-- **MySQL Database**: Efficiently stores encrypted files and metadata.
-- **Access Logging**: Maintains a record of access attempts, ensuring transparency and accountability.
+- **AES Encryption (Client-Side)**: Files are encrypted before reaching the server, ensuring robust data security.
+- **User Authentication**: Only authenticated users can access or upload files, enhancing access control.
+- **MySQL Database**: Securely stores encrypted files, user credentials, and metadata.
+- **Access Logging**: Logs all access attempts to ensure accountability and transparency.
 
 ## Security Benefits
-This application provides protection against:
-- **Data Breaches**: Client-side encryption keeps data secure even if the database is compromised.
-- **Unauthorized Access**: Limits access to authenticated users with proper credentials.
-- **Man-in-the-Middle Attacks**: Files are encrypted on the client side, so intercepted data remains unreadable.
+This application offers protection against:
+- **Data Breaches**: Encrypting files client-side means that, even if a breach occurs, data remains unreadable without the decryption key.
+- **Unauthorized Access**: Only verified users with the proper credentials can access stored files.
+- **Man-in-the-Middle (MitM) Attacks**: Client-side encryption keeps intercepted data unreadable.
+- **Tampering Detection**: Built-in integrity checks identify any file modifications.
 
 ## Technology Stack
 - **Frontend**: Next.js, React.js, Tailwind CSS
 - **Backend**: Express.js, MySQL, JavaScript (AES Encryption)
 
-## Getting Started
-
-### Prerequisites
-- Node.js and npm installed
-- MySQL installed and running
-- Environment file for database configuration (e.g., `.env`)
-
-### Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/secure-file-storage.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd secure-file-storage
-    ```
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
-4. Configure your MySQL database in the `.env` file:
-    ```
-    DB_HOST=your_host
-    DB_USER=your_user
-    DB_PASSWORD=your_password
-    DB_NAME=your_database
-    ```
-5. Start the backend server:
-    ```bash
-    npm run server
-    ```
-6. Start the Next.js frontend server:
-    ```bash
-    npm run dev
-    ```
-
-### Usage
-1. Register as a new user or log in to access your secure file storage.
-2. Upload files; each file is encrypted before being sent to the server.
-3. Download and decrypt files with the correct credentials.
-
 ## Project Structure
 - `frontend/`: Next.js, React.js frontend with Tailwind CSS styling
 - `backend/`: Express.js server and API endpoints
-- `encryption/`: AES encryption module implemented in JavaScript
-- `database/`: MySQL setup and migrations
+- `encryption/`: AES encryption module in JavaScript for secure client-side encryption
+- `database/`: MySQL setup and migrations for efficient data storage and retrieval
 
-## Future Enhancements
-- Integrate two-factor authentication (2FA) for an extra layer of security.
-- Implement user-specific keys for finer-grained encryption control.
-- Support for file sharing through public-key cryptography.
+## Usage
+1. Register as a new user or log in with existing credentials.
+2. Upload files, which are encrypted on the client side before being sent to the server.
+3. Download and decrypt files using the decryption key and valid user credentials.
 
-## License
-This project is licensed under the MIT License.
+## Progress
+Currently, we are focusing on developing the front-end of the Secure File Storage System using React.js and Tailwind CSS to create an intuitive and responsive interface. Alongside, we are exploring additional options to enhance the application, with a focus on improving security, user experience, and scalability.
 
-## Contributors
-- **Your Name** - Initial Work
 

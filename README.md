@@ -1,80 +1,79 @@
 # Secure File Storage System
-## Team Members
-1. Keshav Kabra(22bcs052)
-2. Kunal Sharma(22bcs058)
-3. Anish Raja(22bcs012)
-4. Ketan Shamra(22bcs053)
 
 ## Overview
-The Secure File Storage System provides a safe way to store sensitive files by encrypting them with the Advanced Encryption Standard (AES). This ensures that only authorized users with the correct decryption key can access the stored files.
+The Secure File Storage System is a web application built with a full-stack setup to ensure the secure storage of sensitive files. Files are encrypted on the client side using AES encryption, making sure that only authorized users with the decryption key can access stored files.
 
 ## Features
-- **AES Encryption**: Encrypts files with AES, providing a high level of data security.
-- **User Authentication**: Authenticates users to restrict access to the file storage system.
-- **Secure Key Management**: Manages encryption keys securely to prevent unauthorized access.
-- **File Integrity Verification**: Verifies the integrity of files using hashing algorithms to detect tampering.
-- **Access Logging**: Tracks all access attempts to maintain accountability.
+- **AES Encryption (Client-Side)**: Encrypts files before they reach the server, providing additional security.
+- **User Authentication**: Verifies user credentials to restrict access to the storage system.
+- **MySQL Database**: Efficiently stores encrypted files and metadata.
+- **Access Logging**: Maintains a record of access attempts, ensuring transparency and accountability.
 
 ## Security Benefits
-This application protects against:
-- **Data Breaches**: Ensures that files are unreadable in the event of unauthorized access.
-- **Man-in-the-Middle Attacks**: Encrypts files before upload to prevent intercepted data from being readable.
-- **Brute Force Attacks**: Uses strong AES encryption to prevent decryption by brute force.
-- **Unauthorized Access**: Limits access to authenticated and authorized users only.
-- **Tampering Detection**: Uses file integrity checks to detect any file modification.
+This application provides protection against:
+- **Data Breaches**: Client-side encryption keeps data secure even if the database is compromised.
+- **Unauthorized Access**: Limits access to authenticated users with proper credentials.
+- **Man-in-the-Middle Attacks**: Files are encrypted on the client side, so intercepted data remains unreadable.
+
+## Technology Stack
+- **Frontend**: Next.js, React.js, Tailwind CSS
+- **Backend**: Express.js, MySQL, JavaScript (AES Encryption)
 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.6+
-- `pycryptodome` library for AES encryption
-- SQLite or PostgreSQL for database management
-- Flask or Django for backend (optional)
+- Node.js and npm installed
+- MySQL installed and running
+- Environment file for database configuration (e.g., `.env`)
 
 ### Installation
 1. Clone the repository:
     ```bash
     git clone https://github.com/yourusername/secure-file-storage.git
     ```
-2. Install dependencies:
+2. Navigate to the project directory:
     ```bash
-    pip install -r requirements.txt
+    cd secure-file-storage
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Configure your MySQL database in the `.env` file:
+    ```
+    DB_HOST=your_host
+    DB_USER=your_user
+    DB_PASSWORD=your_password
+    DB_NAME=your_database
+    ```
+5. Start the backend server:
+    ```bash
+    npm run server
+    ```
+6. Start the Next.js frontend server:
+    ```bash
+    npm run dev
     ```
 
 ### Usage
-1. Start the application:
-    ```bash
-    python app.py
-    ```
-2. Login or Register as a new user.
-3. Upload files to the storage system (files are encrypted automatically).
-4. Retrieve and decrypt files using your credentials and decryption key.
+1. Register as a new user or log in to access your secure file storage.
+2. Upload files; each file is encrypted before being sent to the server.
+3. Download and decrypt files with the correct credentials.
 
 ## Project Structure
-- `app.py`: Main application logic.
-- `encryption.py`: Encryption and decryption functions using AES.
-- `models.py`: Database models for storing user information and files.
-- `templates/`: HTML templates for the user interface.
+- `frontend/`: Next.js, React.js frontend with Tailwind CSS styling
+- `backend/`: Express.js server and API endpoints
+- `encryption/`: AES encryption module implemented in JavaScript
+- `database/`: MySQL setup and migrations
 
-## Technologies Used
-- **Python**: Core programming language.
-- **Flask/Django**: For web backend (optional).
-- **SQLite/PostgreSQL**: Database for storing user credentials and encrypted files.
-- **AES Encryption (PyCryptodome)**: Provides symmetric encryption.
+## Future Enhancements
+- Integrate two-factor authentication (2FA) for an extra layer of security.
+- Implement user-specific keys for finer-grained encryption control.
+- Support for file sharing through public-key cryptography.
 
 ## License
 This project is licensed under the MIT License.
 
-## Future Enhancements
-- Implement two-factor authentication (2FA) for additional security.
-- Integrate user-specific encryption keys for enhanced privacy.
-- Add support for file sharing with public-key cryptography.
-
----
-
 ## Contributors
 - **Your Name** - Initial Work
 
-
-
-   

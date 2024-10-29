@@ -51,4 +51,7 @@ Currently, we are focusing on developing the front-end of the Secure File Storag
 ## Coclusion
 The Secure File Storage System aims to address the growing need for secure data storage solutions in an increasingly digital world. By leveraging advanced encryption techniques and a user-friendly interface, this project not only safeguards sensitive information but also empowers users to manage their data with confidence. As we continue to develop and enhance the application, our goal remains to provide a reliable, secure, and scalable platform for file storage that meets the highest standards of data protection
 
+## Conclusion
+The Secure File Storage System aims to address the growing need for secure data storage solutions in an increasingly digital world. By leveraging advanced encryption techniques and a user-friendly interface, this project not only safeguards sensitive information but also empowers users to manage their data with confidence. As we continue to develop and enhance the application, our goal remains to provide a reliable, secure, and scalable platform for file storage that meets the highest standards of data protection.
+
 

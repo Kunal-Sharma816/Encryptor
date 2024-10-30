@@ -31,13 +31,13 @@ This application offers protection against:
 
 ## Technology Stack
 - **Frontend**: React.js, Tailwind CSS
-- **Backend**: Express.js, MySQL, JavaScript (AES Encryption)
+- **Backend**: Express.js,  JavaScript (AES Encryption)
 
 ## Project Structure
-- `frontend/`: Next.js, React.js frontend with Tailwind CSS styling
+- `frontend/`: React.js frontend with Tailwind CSS styling
 - `backend/`: Express.js server and API endpoints
 - `encryption/`: AES encryption module in JavaScript for secure client-side encryption
-- `database/`: MySQL setup and migrations for efficient data storage and retrieval
+
 
 ## Usage
 1. Register as a new user or log in with existing credentials.
@@ -48,7 +48,7 @@ This application offers protection against:
 Currently, we are focusing on developing the front-end of the Secure File Storage System using React.js and Tailwind CSS to create an intuitive and responsive interface. Alongside, we are exploring additional options to enhance the application, with a focus on improving security, user experience, and scalability.
 
 ## Conclusion
-The Secure File Storage System aims to address the growing need for secure data storage solutions in an increasingly digital world. By leveraging advanced encryption techniques and a user-friendly interface, this project not only safeguards sensitive information but also empowers users to manage their data with confidence. As we continue to develop and enhance the application, our goal remains to provide a reliable, secure, and scalable platform for file storage that meets the highest standards of data protection
+The Secure File Storage System aims to address the growing need for secure data storage solutions in an increasingly digital world. By leveraging advanced encryption techniques and a user-friendly interface, this project not only safeguards sensitive information but also empowers users to manage their data with confidence. As we continue to develop and enhance the application, our goal remains to provide a reliable, secure, and scalable platform for file storage that meets the highest standards of data protection.
 
 
 

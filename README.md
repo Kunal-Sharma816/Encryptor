@@ -27,7 +27,6 @@ The **Secure File Storage System** targets users who need a safe platform for up
 This application offers protection against:
 - **Data Breaches**: Encrypting files client-side means that, even if a breach occurs, data remains unreadable without the decryption key.
 - **Unauthorized Access**: Only verified users with the proper credentials can access stored files.
-- **Man-in-the-Middle (MitM) Attacks**: Client-side encryption keeps intercepted data unreadable.
 - **Tampering Detection**: Built-in integrity checks identify any file modifications.
 
 ## Technology Stack

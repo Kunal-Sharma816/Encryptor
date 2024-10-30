@@ -4,7 +4,7 @@
 1. Keshav Kabra(22bcs052)
 2. Kunal Sharma(22bcs058)
 3. Anish Raja(22bcs012)
-4. Ketan Shamra(22bcs053)
+4. Ketan Sharma(22bcs053)
    
 ## Overview
 The Secure File Storage System is a web application designed to securely store sensitive files. Built with a robust full-stack setup, the application ensures files are encrypted on the client side using AES encryption. This way, only authorized users with the correct decryption key can access stored files, maintaining the highest level of data confidentiality.
